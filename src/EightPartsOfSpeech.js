@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Home from "./Home.jsx";
 import Noun from "./Noun";
-
+import Pronoun from "./Pronoun";
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
 
@@ -12,7 +12,7 @@ const EightPartsOfSpeech = () => {
 
   const partContent = {
     Noun: <Noun />,
-    Pronoun: "Pronouns are used to replace nouns to avoid repetition.",
+    Pronoun: <Pronoun />,
     Adjective: "Adjectives describe or modify nouns.",
     Verb: "Verbs are action words that show what the subject is doing.",
     Adverb: "Adverbs modify verbs, adjectives, and other adverbs.",
