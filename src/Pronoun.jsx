@@ -117,6 +117,83 @@ export default function Pronoun() {
               missing for walking places he should not go.)
             </li>
           </ul>
+          <h3>3. Demonstrative Pronoun</h3>
+          A demonstrative pronoun is a word used to point something or someone
+          specific.
+          <br /> There are four demonstrative pronouns namely{" "}
+          <b> this, that, these and those</b>.
+          <br />
+          <h5>This</h5>
+          <b>"This"</b> refers to a singular thing or person that is near the
+          first person.
+          <br />
+          (Example. <br /> This is the man who tries hardest in the class.)
+          <br />
+          <h5>That</h5>
+          <b>"That" </b> refers to a singular thing or person that is a distance
+          far from the first person.
+          <br />
+          (Example. <br />
+          That is the best item you can get here.)
+          <h5>These</h5>
+          <b>"These"</b> refers to multiple things or people that are near the
+          first person.
+          <br />
+          (Example. <br /> These are the words that I never told you.)
+          <br />
+          <h5> Those</h5>
+          <b>"Those"</b> refers to multiple things or people that are far from
+          the first person.
+          <br /> ( Example. <br /> Those are the best days of my life.) <br />
+          <br />
+          <b>
+            <i>
+              Note: If a noun follows a demonstrative pronoun, it turns into a
+              demonstrative adjectiive.
+            </i>
+          </b>
+          <h3>4. Interrogative Pronouns</h3>
+          Interrofgative pronouns are used to refer unknown nouns by an
+          interrogative sentence. <br /> There are five innterrogative pronouns
+          namely <b>who, which, whom, what and whose</b>.
+          <br />
+          <h5>Who</h5>
+          <b>"Who"</b> is used to ask about a subjective person or people.{" "}
+          <br /> (Example. <br /> Who gave you this book?)
+          <h5>Whom</h5>
+          <b>"Whom"</b> is used to ask about an objective person or people.{" "}
+          <br /> (Example. <br /> Whom should I give these flowers now?)
+          <h5>What</h5>
+          <b>"What"</b> is used to ask about things or ideas. <br /> (Example.
+          <br /> What are you going to do now? <br /> What do you want to take?)
+          <h5>Which</h5>
+          <b>"Which"</b> is used to ask about things or ideas from the
+          selections or choices.
+          <br /> (Example. <br /> Which is your favourite anime character in One
+          Piece? <br /> Which should I wear, boots or sneakers?)
+          <h5>Whose</h5>
+          <b>"Whose"</b> is used to ask about the possession of things or ideas.
+          <br /> (Example. <br /> Whose are these books? <br /> Johnny is
+          curious about whosse are these ideas?)
+          <br />
+          <b>
+            <i>
+              Note: If there's a noun standing behind an interrogative
+              pronoun("what", "which" and "whose"), it turns into an
+              interrogative adjectiive.
+            </i>
+          </b>
+          <h3>5. Quantitative Pronouns</h3>
+          Quantitative pronouns refers to nouns by showing the quantities of the
+          nouns. <br /> (Example. some, any, all, many, much, none)
+          <br />
+          (Example. There are a lot of books are on the table. Some are mine and
+          none is Jame's.)
+          <h3>6. Indefinite Pronouns</h3>
+          Indefinite pronouns refer to people or things whithout saying
+          specifically who or what they are. <br /> (Example. someone, somebody,
+          something, anyone, anybody, anything, noone, nobody, nothing,
+          everyone, everybody, everything)
         </p>
       </div>
     </>
