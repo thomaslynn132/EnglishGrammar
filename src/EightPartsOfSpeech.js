@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Home.jsx";
 import Noun from "./Noun";
 import Pronoun from "./Pronoun";
+import Adjective from "./Adjective";
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
 
@@ -13,7 +14,7 @@ const EightPartsOfSpeech = () => {
   const partContent = {
     Noun: <Noun />,
     Pronoun: <Pronoun />,
-    Adjective: "Adjectives describe or modify nouns.",
+    Adjective: <Adjective />,
     Verb: "Verbs are action words that show what the subject is doing.",
     Adverb: "Adverbs modify verbs, adjectives, and other adverbs.",
     Preposition:

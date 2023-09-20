@@ -185,10 +185,19 @@ export default function Pronoun() {
           </b>
           <h3>5. Quantitative Pronouns</h3>
           Quantitative pronouns refers to nouns by showing the quantities of the
-          nouns. <br /> (Example. some, any, all, many, much, none)
+          nouns. <br /> (Example. one, two, three, some, any, all, many, much,
+          none)
           <br />
           (Example. There are a lot of books are on the table. Some are mine and
           none is Jame's.)
+          <br />{" "}
+          <b>
+            {" "}
+            <i>
+              Note: If there is a noun behind a quantitative pronoun, it becomes
+              a quantitative adjectiive.
+            </i>
+          </b>
           <h3>6. Indefinite Pronouns</h3>
           Indefinite pronouns refer to people or things whithout saying
           specifically who or what they are. <br /> (Example. someone, somebody,
