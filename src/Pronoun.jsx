@@ -178,9 +178,8 @@ export default function Pronoun() {
           <br />
           <b>
             <i>
-              Note: If there's a noun standing behind an interrogative
-              pronoun("what", "which" and "whose"), it turns into an
-              interrogative adjectiive.
+              Note: If a noun exists behind an interrogative pronoun("what",
+              "which" and "whose"), it turns into an interrogative adjectiive.
             </i>
           </b>
           <h3>5. Quantitative Pronouns</h3>

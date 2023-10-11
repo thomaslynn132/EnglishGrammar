@@ -61,10 +61,11 @@
   padding-right: 10px;
   width: 80%;
   display: flex;
+  flex-direction: unset;
 }
 .MiniSgToPl {
   padding: 10px;
-  width: 80px;
+  width: 100px;
   border-radius: 15 px;
   box-shadow: #282c34;
   position: relative;
