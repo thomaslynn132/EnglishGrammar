@@ -1,89 +1,88 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .left-side-nav {
-  margin: 5px;
-  padding: 10px;
-  background-color: rgb(173, 198, 147);
-  height: 500%;
-  width: 100px;
-  position: absolute;
-  border: 5px;
-}
-
-.inner-left-side-nav {
-  text-align: center;
-  height: 23px;
-  width: 90%;
-  background-color: #61dafb;
-  position: relative;
-  margin: 10px 5% 10px 5%;
-  border-radius: 15px;
-  box-shadow: #a03737;
-}
-
-.inner-left-side-nav:hover {
-  background-color: blue;
-}
-
-.container {
-  margin-left: 125px;
-  margin-right: 25px;
-  margin-top: 15px;
-  text-align: left;
-  background-color: aquamarine;
-  background-repeat: repeat-y;
-  padding: 10px;
-}
-.SgToPl {
-  margin-right: 50px;
-  padding-right: 10px;
-  width: 80%;
-  display: flex;
-  flex-direction: unset;
-}
-.MiniSgToPl {
-  padding: 10px;
-  width: 100px;
-  border-radius: 15 px;
-  box-shadow: #282c34;
-  position: relative;
-}
-
-table,
-td,
-th {
-  border: 3px solid #000000;
-  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 3%;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid;
 }
 
-th,
-td {
-  padding: 15px;
+td,
+th {
+  border: 1px solid;
+  padding: auto;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(200, 165, 25);
+}
+tr:hover {
+  background-color: rgb(11, 23, 184);
+}
+
+.inner-left-side-nav {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0;
+  margin: 5px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.inner-left-side-nav:hover {
+  background: #555;
+}
+
+.container {
+  padding: 20px;
+  margin-left: 220px;
+  background-color: #bfc80f51;
+  border-radius: 3%;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  background: #555;
+  border: none;
+}
+
+.selected-part {
+  background-color: #1974d4;
+  color: #d51c1c;
 }

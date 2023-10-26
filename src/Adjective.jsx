@@ -61,6 +61,9 @@ export default function Adjective() {
             </b>
           </li>
           <h3> Three kinds of adjectiives accoding to their compositions:</h3>
+          <h5>Originl Adjectives</h5>
+          (Example. bright, some, cute)
+          <h5>Adjectives derived from Nouns and Verbs</h5>
         </ol>
       </div>
     </>
