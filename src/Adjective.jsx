@@ -4,7 +4,7 @@ import "./App.css";
 export default function Adjective() {
   return (
     <>
-      <div className="Container">
+      <div className="container">
         An adjective is a word that name an attribute to a noun.
         <br />
         There are five kinds of adjectiives accoding to the meaning and three
@@ -60,11 +60,144 @@ export default function Adjective() {
               it is an interrogative pronoun.
             </b>
           </li>
-          <h3> Three kinds of adjectiives accoding to their compositions:</h3>
-          <h5>Originl Adjectives</h5>
-          (Example. bright, some, cute)
-          <h5>Adjectives derived from Nouns and Verbs</h5>
         </ol>
+        <h3> Three kinds of adjectiives accoding to their compositions:</h3>
+        <h5>1. Originl Adjectives</h5>
+        (Example. bright, some, cute)
+        <h5>2. Adjectives derived from Nouns and Verbs</h5>
+        <p>
+          Some adjectiives are derived from from nouns, verbs or even other
+          adjectives by using suffixes (endings) and prefixes (letters placed
+          before the word).
+        </p>
+        <p>
+          <b>Example</b>
+        </p>
+        <table>
+          <tr>
+            <th>Noun or Verb</th>
+            <th>Suffix</th>
+            <th>Adjective</th>
+          </tr>
+          <tr>
+            <th>fame</th>
+            <th>-ous</th>
+            <th>famous</th>
+          </tr>
+          <tr>
+            <th>interest</th>
+            <th>-ing</th>
+            <th>interesting</th>
+          </tr>
+          <tr>
+            <th>excite</th>
+            <th>-ed</th>
+            <th>excited</th>
+          </tr>
+          <tr>
+            <th>profession</th>
+            <th>-al</th>
+            <th>professional</th>
+          </tr>
+          <tr>
+            <th>beauty</th>
+            <th>-ful</th>
+            <th>beautiful</th>
+          </tr>
+          <tr>
+            <th>care</th>
+            <th>-less</th>
+            <th>careless</th>
+          </tr>
+          <tr>
+            <th>friend</th>
+            <th>-ly</th>
+            <th>friendly</th>
+          </tr>
+          <tr>
+            <th>comfort</th>
+            <th>-able, -ible</th>
+            <th>comfortable, divisible</th>
+          </tr>
+          <tr>
+            <th>dirt</th>
+            <th>-y</th>
+            <th>dirty</th>
+          </tr>
+          <tr>
+            <th>create</th>
+            <th>-ive</th>
+            <th>creative</th>
+          </tr>
+          <tr>
+            <th>style</th>
+            <th>-ish</th>
+            <th>stylish</th>
+          </tr>
+          <tr>
+            <th>China,Japan</th>
+            <th>-ese</th>
+            <th>Chinese,Japanese</th>
+          </tr>
+          <tr>
+            <th>wood, gold</th>
+            <th>-en</th>
+            <th>wooden, golden</th>
+          </tr>
+          <tr>
+            <th>trouble</th>
+            <th>-some</th>
+            <th>troublesome</th>
+          </tr>
+        </table>
+        <h5>3. Compound Adjectives</h5>
+        <p>
+          Some adjectiives are formed by the combination of two or more words.
+          Mostly, those words are connected by a hyphen "-".
+        </p>
+        <table>
+          <tr>
+            <th colSpan={2}>Format</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Noun</th>
+            <th>thirty-minute break</th>
+          </tr>
+          <tr>
+            <th>word</th>
+            <th>adjective</th>
+            <th>air-tight seal</th>
+          </tr>
+          <tr>
+            <th>word</th>
+            <th>noun</th>
+            <th>first-class meat</th>
+          </tr>
+          <tr>
+            <th>word</th>
+            <th>participles(present or past)</th>
+            <th>time-saving method, gently-picked fruits</th>
+          </tr>
+          <tr>
+            <th colSpan={2}>titles</th>
+            <th>One Piece actors</th>
+          </tr>
+          <tr>
+            <th colSpan={2}>Quotation Marks</th>
+            <th>"get out now" looks</th>
+          </tr>
+        </table>
+        <h3>Degrees of Adjectives</h3>
+        <h5>
+          There are three degrees of adjectiives namely: Positive, Comparative,
+          Superlative
+        </h5>
+        <p>
+          (Example. good, better best <br />
+          beautiful, more beautiful, most beautiful)
+        </p>
       </div>
     </>
   );

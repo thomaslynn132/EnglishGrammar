@@ -17,7 +17,8 @@ export default function Home() {
           that we are proficient all the things that I mentioned above. Start
           learning advanced vocabularies like phrasal verbs, idioms, modern
           vocabs etc. I hope that you will be able to use English in your daily
-          life as a professional in your environment.
+          life as a professional in your environment. In this pages, I shared
+          everythingI know about English Grammar from tiny little details.
         </p>
       </div>
     </>
