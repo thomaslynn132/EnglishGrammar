@@ -4,19 +4,22 @@ import Home from "./Home.jsx";
 import Noun from "./Noun";
 import Pronoun from "./Pronoun";
 import Adjective from "./Adjective";
+import Verb from "./Verb.jsx";
+import Tenses from "./Tenses.jsx";
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
-
+  const [isActive, setIsActive] = useState("inner-left-side-nav");
   const handlePartClick = (part) => {
     setSelectedPart(part);
+    setIsActive("activeBtn");
   };
-
   const partContent = {
     Noun: <Noun />,
     Pronoun: <Pronoun />,
     Adjective: <Adjective />,
-    Verb: "Verbs are action words that show what the subject is doing.",
-    Adverb: "Adverbs modify verbs, adjectives, and other adverbs.",
+    Verb: <Verb />,
+    Tenses: <Tenses />,
+    Adverb: "Adverbs",
     Preposition:
       "Prepositions show the relationship between a noun and other words in a sentence.",
     Conjunction: "Conjunctions connect words, phrases, or clauses.",
