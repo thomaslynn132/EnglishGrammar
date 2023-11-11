@@ -198,6 +198,24 @@ export default function Adjective() {
           (Example. good, better best <br />
           beautiful, more beautiful, most beautiful)
         </p>
+        <h5>
+          If there are more than an adjectiive before a noun, they can be
+          ordered by their meanings as follows:
+        </h5>
+        <ol typeof="123">
+          <li>
+            Quantity or number (Example. a, an, the, some, one, two, my,---)
+          </li>
+          <li>Opinion (Example. beautiful, intelligent, lovely,---)</li>
+          <li>Size (Example. small, big, large,--)</li>
+          <li>Physical quality (Example. soft, rough,---)</li>
+          <li>Age (Example. old, young,---)</li>
+          <li>Shape (Example. round, square,---)</li>
+          <li>Color (Example. red, blue,---)</li>
+          <li>Origin (Example. Japanese, French,---)</li>
+          <li>Material (Example. wooden, golden, glass,---)</li>
+          <li>Purpose (Example. educational, decorative, industrial,---)</li>
+        </ol>
       </div>
     </>
   );
