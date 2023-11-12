@@ -6,23 +6,26 @@ import Pronoun from "./Pronoun";
 import Adjective from "./Adjective";
 import Verb from "./Verb.jsx";
 import Tenses from "./Tenses.jsx";
+import Adverb from "./Adverb.jsx";
+import Preposition from "./Preposition.jsx";
+import Determiners from "./Determiners.jsx";
+import Conjunction from "./Conjunction.jsx";
+
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
-  const [isActive, setIsActive] = useState("inner-left-side-nav");
   const handlePartClick = (part) => {
     setSelectedPart(part);
-    setIsActive("activeBtn");
   };
   const partContent = {
     Noun: <Noun />,
     Pronoun: <Pronoun />,
     Adjective: <Adjective />,
+    Determiners: <Determiners />,
     Verb: <Verb />,
     Tenses: <Tenses />,
-    Adverb: "Adverbs",
-    Preposition:
-      "Prepositions show the relationship between a noun and other words in a sentence.",
-    Conjunction: "Conjunctions connect words, phrases, or clauses.",
+    Adverb: <Adverb />,
+    Preposition: <Preposition />,
+    Conjunction: <Conjunction />,
     Interjection: "Interjections express strong feelings or emotions.",
   };
 
