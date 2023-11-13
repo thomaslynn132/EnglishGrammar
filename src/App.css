@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  margin-left: 130px;
+  margin-left: 140px;
   margin-top: 0;
 }
 
@@ -18,7 +18,7 @@ body {
   background-color: #000000;
   position: fixed;
   padding: 20px;
-  width: 90px;
+  width: 100px;
   height: 100%;
 }
 
@@ -33,6 +33,14 @@ body {
   cursor: pointer;
   border-radius: 10;
   color: rgb(255, 255, 255);
+}
+
+.inner-left-side-nav.active {
+  font-weight: bolder;
+  color: aqua;
+  font-size: medium;
+  border: #d8d8d8;
+  background-color: #000000;
 }
 
 .inner-left-side-nav:hover {

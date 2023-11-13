@@ -149,7 +149,7 @@ export default function Pronoun() {
           <b>
             <i>
               Note: If a noun follows a demonstrative pronoun, it turns into a
-              demonstrative adjectiive.
+              demonstrative adjective.
             </i>
           </b>
           <h3>4. Interrogative Pronouns</h3>
@@ -179,7 +179,7 @@ export default function Pronoun() {
           <b>
             <i>
               Note: If a noun exists behind an interrogative pronoun("what",
-              "which" and "whose"), it turns into an interrogative adjectiive.
+              "which" and "whose"), it turns into an interrogative adjective.
             </i>
           </b>
           <h3>5. Quantitative Pronouns</h3>
@@ -189,12 +189,11 @@ export default function Pronoun() {
           <br />
           (Example. There are a lot of books are on the table. Some are mine and
           none is Jame's.)
-          <br />{" "}
+          <br />
           <b>
-            {" "}
             <i>
               Note: If there is a noun behind a quantitative pronoun, it becomes
-              a quantitative adjectiive.
+              a quantitative adjective.
             </i>
           </b>
           <h3>6. Indefinite Pronouns</h3>

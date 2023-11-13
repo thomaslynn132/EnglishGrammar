@@ -7,10 +7,10 @@ export default function Adjective() {
       <div className="container">
         An adjective is a word that name an attribute to a noun.
         <br />
-        There are five kinds of adjectiives accoding to the meaning and three
+        There are five kinds of adjectives accoding to the meaning and three
         kinds accoding to the composition.
         <br />
-        Five kinds of adjectiives accoding to their meanings are:
+        Five kinds of s accoding to their meanings are:
         <ol type="123">
           <li>Descriptive or Qualitative Adjective</li>
           <li>Quantitative or Mathematical Adjective</li>
@@ -18,16 +18,16 @@ export default function Adjective() {
           <li>Possessive Adjective</li>
           <li>Interrogative Adjective</li>
         </ol>
-        Three kinds of adjectiives accoding to their compositions are:
+        Three kinds of adjectives accoding to their compositions are:
         <ol type="123">
           <li>Original Adjectives</li>
           <li>Adjectives derived from Nouns and Verbs</li>
           <li>Compound Adjectives</li>
         </ol>
-        <h3> Five kinds of adjectiives accoding to their meanings:</h3>
+        <h3> Five kinds of adjectives accoding to their meanings:</h3>
         <ol type="123">
           <li>
-            <h5>Describtive or Qualitative Adjectives</h5>
+            <h5>Descriptive or Qualitative Adjectives</h5>
             Describtive or qualitative adjectives modify nouns by describing the
             qualities, features or apperances of nouns. <br />
             (Example. hot, cold, cute)
@@ -36,37 +36,37 @@ export default function Adjective() {
             <h5>Quantitative or Mathematical Adjective</h5>
             Quantitative or mathematical adjectives modify nouns by describing
             the number or quantity of countable and uncountable nouns. <br />
-            (Example. many, much, a little, a few of)
+            (Example. many, much, a little, a few of, one, two, three)
           </li>
           <li>
             <h5>Demonstrative Adjective</h5>
-            Demonstrative adjectiives modify nouns by describing a specific noun
+            Demonstrative adjectives modify nouns by describing a specific noun
             or specific nouns. <br />
-            There are only four demonstrative adjectiives namely 'this', 'that',
+            There are only four demonstrative adjectives namely 'this', 'that',
           </li>
           <li>
             <h5>Possessive Adjectives</h5>
-            Possessive adjectiives modify nouns by describing the ownership of
+            Possessive adjectives modify nouns by describing the ownership of
             possession. <br />
             (Example. my, our, your, his, her, its, their, Thomas's, Dogs')
           </li>
           <li>
             <h5>Interrogative Adjectives</h5>
-            Interrogative adjectiives modify nouns by asking the qualities,
+            Interrogative adjectives modify nouns by asking the qualities,
             quantities or possessions. <br />( What, Which, Whose, How many, How
             much) <br />
             <b>
-              Note: If there is not a noun behind an interrogative adjectiive,
-              it is an interrogative pronoun.
+              Note: If there is not a noun behind an interrogative adjective, it
+              is an interrogative pronoun.
             </b>
           </li>
         </ol>
-        <h3> Three kinds of adjectiives accoding to their compositions:</h3>
+        <h3> Three kinds of adjectives accoding to their compositions:</h3>
         <h5>1. Originl Adjectives</h5>
         (Example. bright, some, cute)
         <h5>2. Adjectives derived from Nouns and Verbs</h5>
         <p>
-          Some adjectiives are derived from from nouns, verbs or even other
+          Some adjectives are derived from from nouns, verbs or even other
           adjectives by using suffixes (endings) and prefixes (letters placed
           before the word).
         </p>
@@ -152,7 +152,7 @@ export default function Adjective() {
         </table>
         <h5>3. Compound Adjectives</h5>
         <p>
-          Some adjectiives are formed by the combination of two or more words.
+          Some adjectives are formed by the combination of two or more words.
           Mostly, those words are connected by a hyphen "-".
         </p>
         <table>
@@ -191,7 +191,7 @@ export default function Adjective() {
         </table>
         <h3>Degrees of Adjectives</h3>
         <h5>
-          There are three degrees of adjectiives namely: Positive, Comparative,
+          There are three degrees of adjectives namely: Positive, Comparative,
           Superlative
         </h5>
         <p>
@@ -199,8 +199,8 @@ export default function Adjective() {
           beautiful, more beautiful, most beautiful)
         </p>
         <h5>
-          If there are more than an adjectiive before a noun, they can be
-          ordered by their meanings as follows:
+          If there are more than an adjective before a noun, they can be ordered
+          by their meanings as follows:
         </h5>
         <ol typeof="123">
           <li>

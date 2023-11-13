@@ -52,8 +52,8 @@ export default function Noun() {
           <br />
           <h3>Four types of nouns according to their compositions:</h3>
           <h5>1. Simple Noun</h5> A noun that consists only a single word and is
-          not derived from verbs, adjectiives or adverbs is called a simple
-          noun. <br /> (Eg. book, man, car)
+          not derived from verbs, adjectives or adverbs is called a simple noun.{" "}
+          <br /> (Eg. book, man, car)
           <h5>2. Compound Noun</h5> A noun that is formed by the combination of
           two or more words(nouns, verbs, adverbs) to create a single noun is
           called a compound noun. There are two main types of compound nouns:
@@ -68,7 +68,7 @@ export default function Noun() {
           <br />
           (Eg. breakup(break+up), takeoff(take+off), handout(hand+out))
           <h5>4. Noun derived from other words</h5> Some nouns are derived
-          mostly from gerunds( V-ing) or adjectiives. <br /> (Eg. swimming,
+          mostly from gerunds( V-ing) or adjectives. <br /> (Eg. swimming,
           reading, happiness, kindness)
           <br />
           <br />

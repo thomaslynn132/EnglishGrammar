@@ -10,6 +10,8 @@ import Adverb from "./Adverb.jsx";
 import Preposition from "./Preposition.jsx";
 import Determiners from "./Determiners.jsx";
 import Conjunction from "./Conjunction.jsx";
+import Inrerjection from "./Interjection.jsx";
+import Punctuation from "./Punctuation.jsx";
 
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
@@ -26,7 +28,8 @@ const EightPartsOfSpeech = () => {
     Adverb: <Adverb />,
     Preposition: <Preposition />,
     Conjunction: <Conjunction />,
-    Interjection: "Interjections express strong feelings or emotions.",
+    Interjection: <Inrerjection />,
+    Punctuation: <Punctuation />,
   };
 
   return (
@@ -35,7 +38,9 @@ const EightPartsOfSpeech = () => {
         <h4>Eight Parts Of Speech</h4>
         {Object.keys(partContent).map((part) => (
           <button
-            className="inner-left-side-nav"
+            className={`inner-left-side-nav ${
+              selectedPart === part ? "active" : ""
+            }`}
             key={part}
             onClick={() => handlePartClick(part)}>
             {part}

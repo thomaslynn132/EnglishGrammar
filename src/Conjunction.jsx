@@ -42,9 +42,63 @@ export default function Determiners() {
             </li>
             <li>
               Sometimes, sentence construction may vary according to the
-              conjunction
+              correlative conjunctions.
             </li>
           </ul>
+          The following conjunctive adverbs should be learnt in order to have a
+          great knowledge in sentence constructions.
+          <table>
+            <tr>
+              <th>Function</th>
+              <th rowSpan={5}>Examples</th>
+            </tr>
+            <tr>
+              <th>Addition</th>
+              <th>Additionally</th>
+              <th>Also</th>
+              <th>Besides</th>
+              <th>Futhermore</th>
+              <th>Moreover</th>
+            </tr>
+            <th>
+              <th>Consequence</th>
+              <th>Consequently</th>
+              <th>Accordingly</th>
+              <th>So</th>
+              <th>Therefore</th>
+              <th>Thus</th>
+            </th>
+            <tr>
+              <th>Comparison</th>
+              <th>Alternatively</th>
+              <th>Similarly</th>
+              <th>Likewise</th>
+            </tr>
+            <tr>
+              <th>Contrast</th>
+              <th>If not</th>
+              <th>However</th>
+              <th>Nevertheless</th>
+              <th>Otherwise</th>
+              <th>Conversely</th>
+            </tr>
+            <tr>
+              <th>Emphasis</th>
+              <th>Certainly</th>
+              <th>Definitely</th>
+              <th>Indeed</th>
+              <th>Of course</th>
+              <th>Naturally</th>
+            </tr>
+            <tr>
+              <th>Classification</th>
+              <th>For example</th>
+              <th>For instance</th>
+              <th>Namely</th>
+              <th>i.e.</th>
+              <th>Notably</th>
+            </tr>
+          </table>
         </p>
       </div>
     </>

@@ -57,8 +57,8 @@ export default function Adverb() {
           </li>
         </ol>
         <h5>
-          If there are more than an adverb in a sentence they can be ordered as
-          follows:
+          If there are more than an adverb containing continuously in a sentence
+          they can be ordered as follows:
         </h5>
         <ol typeof="123">
           <li>Adverb of manner</li>
