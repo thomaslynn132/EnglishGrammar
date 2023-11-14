@@ -52,7 +52,7 @@ export default function Noun() {
           <br />
           <h3>Four types of nouns according to their compositions:</h3>
           <h5>1. Simple Noun</h5> A noun that consists only a single word and is
-          not derived from verbs, adjectives or adverbs is called a simple noun.{" "}
+          not derived from verbs, adjectives or adverbs is called a simple noun.
           <br /> (Eg. book, man, car)
           <h5>2. Compound Noun</h5> A noun that is formed by the combination of
           two or more words(nouns, verbs, adverbs) to create a single noun is

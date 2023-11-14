@@ -12,7 +12,8 @@ import Determiners from "./Determiners.jsx";
 import Conjunction from "./Conjunction.jsx";
 import Inrerjection from "./Interjection.jsx";
 import Punctuation from "./Punctuation.jsx";
-
+import ActivePassive from "./ActivePassive.jsx";
+import ReportedSpeech from "./ReportedSpeech.jsx";
 const EightPartsOfSpeech = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
   const handlePartClick = (part) => {
@@ -30,12 +31,14 @@ const EightPartsOfSpeech = () => {
     Conjunction: <Conjunction />,
     Interjection: <Inrerjection />,
     Punctuation: <Punctuation />,
+    ActivePassive: <ActivePassive />,
+    ReportedSpeech: <ReportedSpeech />,
   };
 
   return (
     <>
       <div className="left-side-nav">
-        <h4>Eight Parts Of Speech</h4>
+        <h1 className="notes">Notes</h1>
         {Object.keys(partContent).map((part) => (
           <button
             className={`inner-left-side-nav ${
