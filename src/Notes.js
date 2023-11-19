@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
 import Home from "./Home.jsx";
-import Noun from "./Noun";
-import Pronoun from "./Pronoun";
-import Adjective from "./Adjective";
+import Noun from "./Noun.jsx";
+import Pronoun from "./Pronoun.jsx";
+import Adjective from "./Adjective.jsx";
 import Verb from "./Verb.jsx";
 import Tenses from "./Tenses.jsx";
 import Adverb from "./Adverb.jsx";
@@ -14,7 +14,7 @@ import Inrerjection from "./Interjection.jsx";
 import Punctuation from "./Punctuation.jsx";
 import ActivePassive from "./ActivePassive.jsx";
 import ReportedSpeech from "./ReportedSpeech.jsx";
-const EightPartsOfSpeech = () => {
+const Notes = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
   const handlePartClick = (part) => {
     setSelectedPart(part);
@@ -51,11 +51,11 @@ const EightPartsOfSpeech = () => {
         ))}
       </div>
       <div className="container">
-        <h3>{selectedPart}</h3>
+        <h2>{selectedPart}</h2>
         <p> {partContent[selectedPart]} </p>
       </div>
     </>
   );
 };
 
-export default EightPartsOfSpeech;
+export default Notes;

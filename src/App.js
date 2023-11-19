@@ -1,12 +1,21 @@
-import "./App.css";
-import EightPartsOfSpeech from "./EightPartsOfSpeech";
-
-function App() {
+// App.js
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./Navbar";
+import Notes from "./Notes";
+import Exercises from "./Exercise";
+import Footer from "./Footer";
+const App = () => {
   return (
-    <div className="App">
-      <EightPartsOfSpeech />
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/Notes" element={<Notes />} />
+        <Route path="/Exercises" element={<Exercises />} />
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
