@@ -7,7 +7,9 @@ export default function Footer() {
     <footer>
       <div className="copyright-container">
         <p>
-          &copy; {currentYear} Thomas's English Grammar. All Rights Reserved.
+          &copy; {currentYear} Thomas's English Grammar. Everyone is allowed to
+          learn or teach by using this website. Copying is allowed but reselling
+          my notes is strongly restricted.
         </p>
       </div>
     </footer>

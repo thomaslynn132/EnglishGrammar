@@ -38,7 +38,7 @@ const Notes = () => {
   return (
     <>
       <div className="left-side-nav">
-        <h1 className="notes">Notes</h1>
+        <h2 className="notes">Notes</h2>
         {Object.keys(partContent).map((part) => (
           <button
             className={`inner-left-side-nav ${
