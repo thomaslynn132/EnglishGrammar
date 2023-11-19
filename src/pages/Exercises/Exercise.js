@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./Home";
+import Home from "../../Home";
 import { useState } from "react";
-import WordForms from "./WordForms";
-import TensesExercises from "./TenseExercises";
-import AvPvExe from "./AvPvExe";
-import RSExe from "./ReportedSpeechExe";
-import ConjunctionExe from "./ConjunctionExe";
+import WordForms from "../../WordForms";
+import TensesExercises from "../../TenseExercises";
+import AvPvExe from "../../AvPvExe";
+import RSExe from "../../ReportedSpeechExe";
+import ConjunctionExe from "../../ConjunctionExe";
 const Exercises = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
   const handlePartClick = (part) => {
