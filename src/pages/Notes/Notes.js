@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
-import Home from "./Home.jsx";
+import "../../App.css";
+import Home from "../../components/Home.jsx";
 import Noun from "./Noun.jsx";
 import Pronoun from "./Pronoun.jsx";
 import Adjective from "./Adjective.jsx";
@@ -38,7 +38,7 @@ const Notes = () => {
   return (
     <>
       <div className="left-side-nav">
-        <h2 className="notes">Notes</h2>
+        <h1 className="notes">Notes</h1>
         {Object.keys(partContent).map((part) => (
           <button
             className={`inner-left-side-nav ${

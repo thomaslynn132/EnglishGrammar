@@ -1,10 +1,10 @@
 // App.js
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./Navbar";
-import Notes from "./Notes";
-import Exercises from "./Exercise";
-import Footer from "./Footer";
+import NavBar from "./components/Navbar";
+import Notes from "./pages/Notes/Notes";
+import Exercises from "./pages/Exercises/Exercise";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
