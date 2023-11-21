@@ -6,7 +6,7 @@ export default function WordForms() {
         <h3>Fill in the blanks</h3>
         <ol>
           <li>
-            The __________ of the story was unexpected. (<em>end</em>)
+            The __________ of the story was unexpected. (<em>outcome</em>)
           </li>
           <li>
             The __________ of the story was unexpected. (<em>outcome</em>)

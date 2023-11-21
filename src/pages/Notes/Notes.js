@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import Home from "../../Home.jsx";
 import Noun from "./Noun.jsx";
 import Pronoun from "./Pronoun.jsx";
-import "./App.css";
 import Adjective from "./Adjective.jsx";
 import Verb from "./Verb.jsx";
 import Tenses from "./Tenses.jsx";
-import Adverb from "../../Adverb.jsx";
+import Adverb from "./Adverb.jsx";
 import Preposition from "./Preposition.jsx";
 import Determiners from "./Determiners.jsx";
 import Conjunction from "./Conjunction.jsx";
@@ -14,6 +12,7 @@ import Inrerjection from "./Interjection.jsx";
 import Punctuation from "./Punctuation.jsx";
 import ActivePassive from "./ActivePassive.jsx";
 import ReportedSpeech from "./ReportedSpeech.jsx";
+import Home from "../../components/Home.jsx";
 const Notes = () => {
   const [selectedPart, setSelectedPart] = useState(<Home />);
   const handlePartClick = (part) => {
@@ -38,7 +37,7 @@ const Notes = () => {
   return (
     <>
       <div className="left-side-nav">
-        <h2 className="notes">Notes</h2>
+        <h1 className="notes">Notes</h1>
         {Object.keys(partContent).map((part) => (
           <button
             className={`inner-left-side-nav ${
