@@ -9,6 +9,9 @@ export default function WordForms() {
             The __________ of the story was unexpected. (<em>end</em>)
           </li>
           <li>
+            The __________ of the story was unexpected. (<em>outcome</em>)
+          </li>
+          <li>
             She is known for her __________ in solving complex problems. (
             <em>proficiency</em>)
           </li>
@@ -107,7 +110,6 @@ export default function WordForms() {
             The __________ of the play was both entertaining and
             thought-provoking. (<em>performance</em>)
           </li>
-
           <li>
             The __________ of the experiment led to groundbreaking discoveries.
             (<em>methodology</em>)
@@ -187,7 +189,6 @@ export default function WordForms() {
             The __________ of the music created a magical atmosphere. (
             <em>composition</em>)
           </li>
-
           <li>
             The __________ of the company is reflected in its success. (
             <em>culture</em>)

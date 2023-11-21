@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./App.css";
-import Home from "./Home.jsx";
+import Home from "../../Home.jsx";
 import Noun from "./Noun.jsx";
 import Pronoun from "./Pronoun.jsx";
+import "./App.css";
 import Adjective from "./Adjective.jsx";
 import Verb from "./Verb.jsx";
 import Tenses from "./Tenses.jsx";
-import Adverb from "./Adverb.jsx";
+import Adverb from "../../Adverb.jsx";
 import Preposition from "./Preposition.jsx";
 import Determiners from "./Determiners.jsx";
 import Conjunction from "./Conjunction.jsx";
@@ -52,7 +52,7 @@ const Notes = () => {
       </div>
       <div className="container">
         <h2>{selectedPart}</h2>
-        <p> {partContent[selectedPart]} </p>
+        <div> {partContent[selectedPart]} </div>
       </div>
     </>
   );

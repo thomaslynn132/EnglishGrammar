@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Home";
+import Home from "../../components/Home";
 import { useState } from "react";
 import WordForms from "./WordForms";
 import TensesExercises from "./TenseExercises";
