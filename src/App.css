@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(202, 202, 202);
   display: flex;
   justify-content: center;
   align-items: left;
@@ -116,4 +116,16 @@ tr:hover {
 .copyright-container {
   margin-left: 165px;
   padding: auto;
+}
+
+.Google {
+  text-emphasis-color: rgb(0, 0, 0);
+  text-decoration-color: rgb(0, 0, 0);
+  font: bold;
+  border: #333;
+  background: darkblue;
+  border-color: #000000;
+  border-style: double;
+  color: #ffffff;
+  font: italic;
 }

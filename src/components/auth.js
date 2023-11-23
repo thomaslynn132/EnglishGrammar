@@ -10,7 +10,9 @@ const Auth = () => {
   };
   return (
     <>
-      <button onClick={signIn}>Sign In With Google</button>
+      <button onClick={signIn} className="Google">
+        Sign In With Google
+      </button>
     </>
   );
 };
