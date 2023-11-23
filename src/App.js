@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar";
 import Notes from "./pages/Notes/Notes";
 import Exercises from "./pages/Exercises/Exercise";
 import Footer from "./components/Footer";
+import Auth from "./components/auth";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/Exercises" element={<Exercises />} />
       </Routes>
       <Footer />
+      <Auth />
     </>
   );
 };

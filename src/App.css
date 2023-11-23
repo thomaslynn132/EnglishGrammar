@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: left;
