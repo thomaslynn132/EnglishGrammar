@@ -18,7 +18,8 @@ export default function Pronoun() {
           </b>
           <h3>1. Personal Pronouns</h3>
           Personal pronouns refer to person or people or things.
-        </p>
+        </p>{" "}
+        <br />
         <table>
           <tr>
             <th>Singular Or Plural</th>
@@ -72,7 +73,8 @@ export default function Pronoun() {
             <td>Theirs</td>
             <td>Themselves</td>
           </tr>
-        </table>
+        </table>{" "}
+        <br />
         <p>
           <h3>2. Relative Pronouns</h3>
           Relative pronouns are pronouns used to introduce relative clauses.

@@ -1,16 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../App.css";
-// import Notes from "./Notes";
-//import Exercise from "./Exercise";
-
+import DayOrNightMode from "./DayOrNightMode";
 const NavBar = () => {
   const navLinkStyles = ({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "small",
       textDecoration: isActive ? "none" : "underline",
       backgroundColor: isActive ? "black" : "#333",
-      padding: "8px",
+      padding: "10px",
+      Bottom: "25px",
       marginLeft: "10px",
       color: "white",
       border: "double",
@@ -20,6 +18,7 @@ const NavBar = () => {
 
   return (
     <nav className="NavBar">
+      <DayOrNightMode />
       <NavLink style={navLinkStyles} link="./Notes" to="/Notes" exact>
         Notes
       </NavLink>

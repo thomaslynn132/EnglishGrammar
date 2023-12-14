@@ -49,6 +49,16 @@ const Notes = () => {
           </button>
         ))}
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="container">
         <h2>{selectedPart}</h2>
         <div> {partContent[selectedPart]} </div>

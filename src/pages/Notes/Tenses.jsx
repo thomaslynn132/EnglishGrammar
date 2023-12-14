@@ -4,8 +4,8 @@ export default function Tenses() {
     <>
       <div className="container">
         Verbs need tenses in order to have a meaningful sentence. Tenses are one
-        of the most points to know in order to have a grammartically correct
-        sentences. There are 12 kinds of tenses.
+        of the most important points to know in order to have a grammartically
+        correct sentences. There are 12 kinds of tenses.
         <table>
           <tr>
             <th>

@@ -11,7 +11,7 @@ export default function Footer() {
           free from my website but reselling my notes is restricted. You can
           contact me via: <br />
         </p>
-        <ContactImgs />
+        <ContactImgs /> for suggestions and corrections.
       </div>
     </footer>
   );
