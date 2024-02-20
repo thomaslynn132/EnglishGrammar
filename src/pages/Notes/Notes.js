@@ -12,9 +12,9 @@ import Inrerjection from "./Interjection.jsx";
 import Punctuation from "./Punctuation.jsx";
 import ActivePassive from "./ActivePassive.jsx";
 import ReportedSpeech from "./ReportedSpeech.jsx";
-import Home from "../../components/Home.jsx";
+
 const Notes = () => {
-  const [selectedPart, setSelectedPart] = useState(<Home />);
+  const [selectedPart, setSelectedPart] = useState(<Noun />);
   const handlePartClick = (part) => {
     setSelectedPart(part);
   };
@@ -38,6 +38,7 @@ const Notes = () => {
     <>
       <div className="left-side-nav">
         <h1 className="notes">Notes</h1>
+
         {Object.keys(partContent).map((part) => (
           <button
             className={`inner-left-side-nav ${
@@ -49,16 +50,6 @@ const Notes = () => {
           </button>
         ))}
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div className="container">
         <h2>{selectedPart}</h2>
         <div> {partContent[selectedPart]} </div>

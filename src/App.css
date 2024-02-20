@@ -11,6 +11,18 @@ body {
   background-color: #000000;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin:hover {
+  animation: spin 2s linear infinite;
+}
 .note {
   font-weight: bold;
   color: rgb(83, 149, 255);
@@ -100,6 +112,7 @@ body {
     width: 125px;
     height: 100%;
   }
+
   .night-mode .left-side-nav {
     background-color: #333;
     color: #ffffff;
