@@ -48,14 +48,10 @@ const NavBar = () => {
               }}
             />
           </Link>
-          <NavLink style={navLinkStyles} link="./Notes" to="/Notes" exact>
+          <NavLink style={navLinkStyles} to="/Notes" exact>
             Notes
           </NavLink>
-          <NavLink
-            style={navLinkStyles}
-            link="./Exercises"
-            to="/exercises"
-            exact>
+          <NavLink style={navLinkStyles} to="/exercises" exact>
             Exercises
           </NavLink>
         </div>

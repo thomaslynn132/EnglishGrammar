@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+
 export default function Home() {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const text = textRef.current;
+    const words = text.textContent.split(" ");
+    text.textContent = "";
+
+    words.forEach((word, index) => {
+      const span = document.createElement("span");
+      span.textContent = word + " ";
+      text.appendChild(span);
+
+      gsap.from(span, {
+        duration: 0.5,
+        opacity: 0,
+        x: -20,
+        ease: "power2.inOut",
+        delay: index * 0.1,
+      });
+    });
+  }, []);
+
   return (
     <>
       <div className="container">
         <h3>Home</h3>
-        <p>
+        <p ref={textRef}>
           Let me introduce myself first.
           <br /> You can call me Thomas. I am just a mere young man who loves
           both English and programming. In this project, I'll share everything I

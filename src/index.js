@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
-// import reportWebVitals from "./reportWebVitals";
+import AnimateH2 from "./components/AnimateH2";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -13,4 +13,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-// reportWebVitals();
+AnimateH2();

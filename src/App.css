@@ -10,7 +10,9 @@ body {
 .night-mode {
   background-color: #000000;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -58,10 +60,14 @@ body {
   .night-mode .left-side-nav {
     background-color: #333;
     color: #ffffff;
-    /* position: fixed; */
     font-family: "Courier New", Courier, monospace;
   }
 
+  .left-side-nav-items {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+  }
   .inner-left-side-nav {
     color: rgb(68, 68, 68);
     display: inline-block;
@@ -103,14 +109,14 @@ body {
   .left-side-nav {
     font-family: "Courier New", Courier, monospace;
     background-color: #5289ff;
-    position: fixed;
+    position: absolute;
     /* margin-top: 5px; */
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
     padding-top: 0;
     width: 125px;
-    height: 100%;
+    height: auto;
   }
 
   .night-mode .left-side-nav {
@@ -140,11 +146,12 @@ body {
     color: rgb(0, 0, 0);
   }
   .copyright-container {
-    margin-left: 165px;
-    margin-bottom: 0px;
+    margin: 15px;
     padding: auto;
     background-color: #ecf2ad;
     color: #000000;
+    border-radius: 15px;
+    padding: 15px;
   }
 }
 .night-mode .inner-left-side-nav {
@@ -160,7 +167,6 @@ body {
   font-weight: bolder;
   border: 0;
   color: red;
-  font-size: larger;
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #5289ff;
@@ -168,7 +174,6 @@ body {
 .night-mode .inner-left-side-nav.active {
   color: #5289ff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
   border: 0cap;
   background-color: #333;
 }
@@ -233,7 +238,3 @@ th:hover {
 .night-mode .NavBar {
   background-color: #240c0c;
 }
-/* .dayOrNightImg {
-  margin-right: 5px;
-  padding: 10px;
-} */
