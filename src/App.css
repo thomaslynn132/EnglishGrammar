@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(255, 250, 215);
+  overflow-x: hidden;
 }
 .toDesign {
   display: flex;
@@ -45,17 +46,15 @@ body {
     color: #ffffff;
   }
   .left-side-nav {
-    height: 50px;
+    height: 30px;
     font-family: "Courier New", Courier, monospace;
     background-color: #5289ff;
     position: relative;
-    display: block;
+    justify-content: center;
     flex-direction: row;
-    /* margin-top: 5px; */
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-top: 0;
+    padding: 1px 10px 50px 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
   }
   .night-mode .left-side-nav {
     background-color: #333;
@@ -72,7 +71,6 @@ body {
     color: rgb(68, 68, 68);
     display: inline-block;
     width: auto;
-
     border-radius: 5px;
     box-shadow: 3px 3px 0px 0px;
     padding-left: 10px;
@@ -100,7 +98,7 @@ body {
     justify-content: left;
     align-items: left;
     flex-direction: column;
-    margin-left: 165px;
+    margin-left: 205px;
     margin-top: 0px;
   }
   .night-mode .container {
@@ -114,9 +112,9 @@ body {
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
-    padding-top: 0;
-    width: 125px;
-    height: auto;
+    width: 145px;
+    min-height: 100vh;
+    border-radius: 25px;
   }
 
   .night-mode .left-side-nav {
@@ -129,11 +127,11 @@ body {
   .inner-left-side-nav {
     color: rgb(68, 68, 68);
     display: block;
-    width: 120px;
+    width: 150px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 0px 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     height: 36px;
     background-color: #d9eb81;
     border: none;
@@ -229,10 +227,14 @@ th:hover {
 
 .NavBar {
   background-color: rgba(0, 106, 255, 0.658);
-  height: 80px;
-  width: 100%;
+  min-height: 70px;
+  align-items: center;
+  width: 95vw;
   align-items: flex-starts;
   position: relative;
+  border-radius: 15px;
+  padding: 5px;
+  border: 1px solid red;
 }
 
 .night-mode .NavBar {

@@ -1,7 +1,4 @@
-import Notes from './Notes/Notes'; //try to fix this like exercise
-import Exercises from './Exercises';
+import Notes from "./notes";
+import Exercises from "./exercises";
 
-export { 
-  Notes, 
-  Exercises 
-};
+export { Notes, Exercises };

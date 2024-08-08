@@ -4,7 +4,7 @@ import "../../App.css";
 export default function Pronoun() {
   return (
     <>
-      <div className="container">
+      <div>
         <p>
           A pronoun is a word that is used to refer a noun. <br />
           <b>

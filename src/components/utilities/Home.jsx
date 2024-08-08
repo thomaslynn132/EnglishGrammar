@@ -28,10 +28,10 @@ export default function Home() {
     <>
       <div className="container">
         <h3>Home</h3>
+        <p ref={textRef}>Let me introduce myself first.</p>
         <p ref={textRef}>
-          Let me introduce myself first.
-          <br /> You can call me Thomas. I am just a mere young man who loves
-          both English and programming. In this project, I'll share everything I
+          You can call me Thomas. I am just a mere young man who loves both
+          English and programming. In this project, I'll share everything I
           know, about English Grammar and vocabularies. Firstly, you all must
           understand the meanings and uses of all eight parts of Speech. And
           then, you will have to learn degrees of Adjectives and then you will

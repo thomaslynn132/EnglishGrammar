@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
+import { NavBar, Footer, Home } from "./components/utilities";
 import { Notes, Exercises } from "./pages";
 
 const App = () => {
   return (
-    <>
-      <NavBar />
+    <div style={{ padding: "5px" }}>
+      <div style={{ marginBottom: "10px" }}>
+        <NavBar />
+      </div>
       <div className="toRedesign">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,8 +18,10 @@ const App = () => {
           <Route path="/exercises/:part" element={<Exercises />} />
         </Routes>
       </div>
-      <Footer />
-    </>
+      <div>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

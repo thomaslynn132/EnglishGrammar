@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { day, night } from "../assets";
+import { day, night } from "../../assets";
 import { IoSunny } from "react-icons/io5";
 import { IoMdMoon } from "react-icons/io";
 import { Link } from "react-router-dom";
-import "../App.css";
 const NavBar = () => {
   const [nightMode, setNightMode] = useState(false);
   const toggleNightMode = () => {
@@ -35,7 +34,12 @@ const NavBar = () => {
           justifyContent: "space-between",
           alignItems: "center",
         }}>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}>
           <Link to="/">
             <img
               src={nightMode ? night : day}

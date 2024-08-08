@@ -2,47 +2,43 @@ import React, { useRef, useEffect } from "react";
 import "../../App.css";
 import { gsap } from "gsap";
 
-function Noun() {
+export default function Noun() {
   const containerRef = useRef(null);
   const headingRefs = useRef([]);
   const paragraphRef = useRef(null);
   const listRefs = useRef([]);
 
   useEffect(() => {
-    gsap.from(containerRef.current, {
-      duration: 1,
-      opacity: 0,
-      y: 20,
-      ease: "power2.inOut",
-    });
+    const animateText = (element) => {
+      const textContent = element.textContent;
+      element.textContent = "";
+      const words = textContent.split(" ");
 
-    gsap.from(headingRefs.current, {
-      duration: 0.5,
-      opacity: 0,
-      y: 20,
-      stagger: 0.1,
-      ease: "power2.inOut",
-    });
+      words.forEach((word, index) => {
+        const span = document.createElement("span");
+        span.textContent = word + " ";
+        element.appendChild(span);
 
-    gsap.from(paragraphRef.current, {
-      duration: 0.5,
-      opacity: 0,
-      y: 20,
-      stagger: 0.1,
-      ease: "power2.inOut",
-    });
+        gsap.from(span, {
+          duration: 0.5,
+          opacity: 0,
+          x: -20,
+          ease: "power2.inOut",
+          delay: index * 0.1,
+        });
+      });
+    };
 
-    gsap.from(listRefs.current, {
-      duration: 0.5,
-      opacity: 0,
-      y: 20,
-      stagger: 0.1,
-      ease: "power2.inOut",
-    });
+    animateText(containerRef.current);
+
+    headingRefs.current.forEach((heading) => animateText(heading));
+
+    animateText(paragraphRef.current);
+
+    listRefs.current.forEach((listItem) => animateText(listItem));
   }, []);
-
   return (
-    <div ref={containerRef} className="container">
+    <div ref={containerRef}>
       <p ref={paragraphRef}>
         Nouns are names of things, actions or feelings.
         <br />
@@ -274,5 +270,3 @@ function Noun() {
     </div>
   );
 }
-
-export default Noun;

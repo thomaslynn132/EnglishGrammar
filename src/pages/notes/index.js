@@ -14,8 +14,7 @@ import {
   Punctuation,
   ActivePassive,
   ReportedSpeech,
-} from "../../pages/Myanmar";
-
+} from "../Myanmar";
 const Notes = () => {
   const { part } = useParams();
   const navigate = useNavigate();
@@ -32,8 +31,8 @@ const Notes = () => {
     { name: "Conjunction", component: <Conjunction /> },
     { name: "Interjection", component: <Interjection /> },
     { name: "Punctuation", component: <Punctuation /> },
-    { name: "ActivePassive", component: <ActivePassive /> },
-    { name: "ReportedSpeech", component: <ReportedSpeech /> },
+    { name: "Active Passive", component: <ActivePassive /> },
+    { name: "Reported Speech", component: <ReportedSpeech /> },
   ];
 
   const handlePartClick = (part) => {
@@ -45,7 +44,6 @@ const Notes = () => {
       navigate("/notes/Noun");
     }
   }, [part, navigate]);
-
   const selectedItem = partContent.find((item) => item.name === part);
 
   return (
