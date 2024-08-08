@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Determiners() {
+export default function Conjunctions() {
   return (
     <>
       <div className="Container">

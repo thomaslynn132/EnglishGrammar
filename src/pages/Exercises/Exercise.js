@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import WordForms from "./WordForms";
-import TensesExercises from "./TenseExercises";
-import AvPvExe from "./AvPvExe";
-import RSExe from "./ReportedSpeechExe";
-import ConjunctionExe from "./ConjunctionExe";
+import {
+  WordForms,
+  TensesExercises,
+  AvPvExe,
+  RSExe,
+  ConjunctionExe,
+} from "../../pages/exercises";
 const Exercises = () => {
   const navigate = useNavigate();
   const { part } = useParams();

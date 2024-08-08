@@ -1,38 +1,40 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Noun from "./Noun.jsx";
-import Pronoun from "./Pronoun.jsx";
-import Adjective from "./Adjective.jsx";
-import Verb from "./Verb.jsx";
-import Tenses from "./Tenses.jsx";
-import Adverb from "./Adverb.jsx";
-import Preposition from "./Preposition.jsx";
-import Determiners from "./Determiners.jsx";
-import Conjunction from "./Conjunction.jsx";
-import Interjection from "./Interjection.jsx";
-import Punctuation from "./Punctuation.jsx";
-import ActivePassive from "./ActivePassive.jsx";
-import ReportedSpeech from "./ReportedSpeech.jsx";
+import {
+  Noun,
+  Pronoun,
+  Adjective,
+  Verb,
+  Tenses,
+  Adverb,
+  Preposition,
+  Determiners,
+  Conjunction,
+  Interjection,
+  Punctuation,
+  ActivePassive,
+  ReportedSpeech,
+} from "../../pages/Myanmar";
 
 const Notes = () => {
   const { part } = useParams();
   const navigate = useNavigate();
 
-  const partContent = {
-    Noun: <Noun />,
-    Pronoun: <Pronoun />,
-    Adjective: <Adjective />,
-    Determiners: <Determiners />,
-    Verb: <Verb />,
-    Tenses: <Tenses />,
-    Adverb: <Adverb />,
-    Preposition: <Preposition />,
-    Conjunction: <Conjunction />,
-    Interjection: <Interjection />,
-    Punctuation: <Punctuation />,
-    ActivePassive: <ActivePassive />,
-    ReportedSpeech: <ReportedSpeech />,
-  };
+  const partContent = [
+    { name: "Noun", component: <Noun /> },
+    { name: "Pronoun", component: <Pronoun /> },
+    { name: "Adjective", component: <Adjective /> },
+    { name: "Determiners", component: <Determiners /> },
+    { name: "Verb", component: <Verb /> },
+    { name: "Tenses", component: <Tenses /> },
+    { name: "Adverb", component: <Adverb /> },
+    { name: "Preposition", component: <Preposition /> },
+    { name: "Conjunction", component: <Conjunction /> },
+    { name: "Interjection", component: <Interjection /> },
+    { name: "Punctuation", component: <Punctuation /> },
+    { name: "ActivePassive", component: <ActivePassive /> },
+    { name: "ReportedSpeech", component: <ReportedSpeech /> },
+  ];
 
   const handlePartClick = (part) => {
     navigate(`/notes/${part}`);
@@ -44,26 +46,29 @@ const Notes = () => {
     }
   }, [part, navigate]);
 
+  const selectedItem = partContent.find((item) => item.name === part);
+
   return (
     <>
       <div className="left-side-nav">
         <h1 className="notes">Notes</h1>
         <div className="left-side-nav-items">
-          {" "}
-          {Object.keys(partContent).map((key) => (
+          {partContent.map((item, index) => (
             <button
-              className={`inner-left-side-nav ${part === key ? "active" : ""}`}
-              key={key}
+              className={`inner-left-side-nav ${
+                part === item.name ? "active" : ""
+              }`}
+              key={index}
               style={{ minWidth: "120px" }}
-              onClick={() => handlePartClick(key)}>
-              {key}
+              onClick={() => handlePartClick(item.name)}>
+              {item.name}
             </button>
           ))}
         </div>
       </div>
       <div className="container">
-        <h2>{part}</h2>
-        <div>{partContent[part]}</div>
+        <h2>{selectedItem?.name}</h2>
+        <div>{selectedItem?.component}</div>
       </div>
     </>
   );
