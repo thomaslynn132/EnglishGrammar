@@ -17,7 +17,7 @@ const Exercises = () => {
     { name: "Tenses", component: <TensesExercises /> },
     { name: "Active Passive", component: <AvPvExe /> },
     { name: "Reported Speech", component: <RSExe /> },
-    { name: "Conjunction ", component: <ConjunctionExe /> },
+    { name: "Conjunction", component: <ConjunctionExe /> },
   ];
 
   const handlePartClick = (partName) => {

@@ -224,7 +224,7 @@ export default function WordForms() {
   ];
 
   return (
-    <div className="container">
+    <div>
       <h3>Fill in the Blanks</h3>
       <ol>
         {exercises.map((exercise, index) => (

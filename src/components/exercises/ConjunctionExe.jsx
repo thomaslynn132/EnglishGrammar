@@ -114,7 +114,10 @@ export default function ConjunctionExe() {
       <h3>{title}</h3>
       <ol>
         {data.map((exercise, index) => (
-          <li key={index}>{exercise.sentence}</li>
+          <li key={index}>
+            {exercise.sentence} <br />
+            <br />
+          </li>
         ))}
       </ol>
     </div>

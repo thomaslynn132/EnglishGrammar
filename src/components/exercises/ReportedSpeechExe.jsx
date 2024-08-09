@@ -55,7 +55,7 @@ export default function RSExe() {
   ];
 
   return (
-    <div className="container">
+    <div>
       <h3>Change the following sentences into reported speech.</h3>
       <ol>
         {exercises.map((exercise, index) => (

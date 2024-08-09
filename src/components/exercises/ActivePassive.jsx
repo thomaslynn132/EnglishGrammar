@@ -107,7 +107,7 @@ const activeSentences = [
 
 export default function AvPvExe() {
   return (
-    <div className="container">
+    <div>
       <h3>Change the following sentences into passive voice.</h3>
       <ol>
         {passiveSentences.map((sentence, index) => (
