@@ -1,61 +1,38 @@
-import { useRef, useEffect } from "react";
+// animate-h2.js
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function AnimateH2() {
-  const h2s = document.querySelectorAll("h2");
+  const h2s = document.querySelectorAll("h1");
   const buttons = document.querySelectorAll("button");
-  const body = document.getElementsByClassName("container");
-  const tables = document.querySelectorAll("table");
-  const bodyRef = useRef(null);
-  // Animate tables
-  gsap.from(tables, {
+  const body = document.getElementsByClassName("Container");
+  const table = document.querySelectorAll("table");
+
+  gsap.from(table, {
     duration: 1,
     opacity: 0,
     y: 50,
     ease: "power2.inOut",
     delay: 1,
-    scrollTrigger: {
-      trigger: tables,
-      start: "top 80%",
-      toggleActions: "play none none none",
-    },
   });
 
-  // Animate table rows
-  tables.forEach((table) => {
-    gsap.from(table.rows, {
-      duration: 1,
-      opacity: 0,
-      y: 50,
-      ease: "power2.inOut",
-      stagger: 0.1,
-      delay: 1.5,
-      scrollTrigger: {
-        trigger: table,
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
-    });
-
-    gsap.from(table.cells, {
-      duration: 1,
-      opacity: 0,
-      x: -20,
-      ease: "power2.inOut",
-      stagger: 0.1,
-      delay: 3,
-      scrollTrigger: {
-        trigger: table,
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
-    });
+  gsap.from(table.rows, {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    ease: "power2.inOut",
+    stagger: 0.1,
+    delay: 1.5,
   });
 
-  // Animate h2s
+  gsap.from(table.cells, {
+    duration: 1,
+    opacity: 0,
+    x: -20,
+    ease: "power2.inOut",
+    stagger: 0.1,
+    delay: 3,
+  });
+  
   h2s.forEach((h2) => {
     const text = h2.textContent;
     h2.textContent = "";
@@ -74,68 +51,39 @@ function AnimateH2() {
         yoyo: true,
         repeat: -1,
         repeatDelay: 0.5,
-        scrollTrigger: {
-          trigger: h2,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
       });
     });
   });
 
-  // Animate buttons
   buttons.forEach((button) => {
     gsap.from(button, {
-      duration: 1.5,
+      duration: 0.5,
       scale: 0.5,
-      opacity: 1,
+      opacity: 0,
       ease: "power2.inOut",
       delay: 0.5,
-      yoyo: true,
-      scrollTrigger: {
-        trigger: button,
-        start: "top 80%",
-        toggleActions: "play none none none",
-      },
     });
   });
 
-  // Animate body (container elements)
-  useEffect(() => {
-    const text = bodyRef;
-    const words = text.textContent.split(" ");
-    text.textContent = "";
+  // new animation for body tag
+  gsap.from(body, {
+    duration: 1,
+    opacity: 0,
+    y: 50, // move 50px from top and bottom
+    ease: "power2.inOut",
+    delay: 1, // delay after h2 and button animations
+  });
 
-    words.forEach((word, index) => {
-      const span = document.createElement("span");
-      span.textContent = word + " ";
-      text.appendChild(span);
-
-      gsap.from(span, {
-        duration: 0.5,
-        opacity: 0,
-        x: -20,
-        ease: "power2.inOut",
-        delay: index * 0.1,
-      });
-    });
-  }, []);
-
-  // Scale and fade-in animation for container elements
+  // fade in top and bottom 50px of the screen
   gsap.fromTo(
     body,
-    { scaleY: 0.8, y: 50 },
+    { scaleY: 0.5, y: 50 },
     {
       duration: 1,
       scaleY: 1,
       y: 0,
       ease: "power2.inOut",
-      delay: 1,
-      scrollTrigger: {
-        trigger: body,
-        start: "top 5px",
-        toggleActions: "play",
-      },
+      delay: 1.5, // delay after body animation
     }
   );
 }

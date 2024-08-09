@@ -7,7 +7,7 @@ import {
   RSExe,
   ConjunctionExe,
 } from "../../components/exercises";
-
+import { Helmet } from "react-helmet";
 const Exercises = () => {
   const navigate = useNavigate();
   const { part } = useParams();
@@ -26,7 +26,7 @@ const Exercises = () => {
 
   useEffect(() => {
     if (!part) {
-      navigate("/exercises/WordForms");
+      navigate("/exercises/Word Forms");
     }
   }, [part, navigate]);
 
@@ -34,6 +34,9 @@ const Exercises = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{selectedItem?.name}</title>
+      </Helmet>
       <div className="left-side-nav">
         <h2 className="notes">Exercises</h2>
         <div className="left-side-nav-items">

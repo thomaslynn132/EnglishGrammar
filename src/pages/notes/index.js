@@ -15,6 +15,7 @@ import {
   ActivePassive,
   ReportedSpeech,
 } from "../Myanmar";
+import { Helmet } from "react-helmet";
 const Notes = () => {
   const { part } = useParams();
   const navigate = useNavigate();
@@ -48,6 +49,9 @@ const Notes = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{selectedItem?.name}</title>
+      </Helmet>
       <div className="left-side-nav">
         <h1 className="notes">Notes</h1>
         <div className="left-side-nav-items">
